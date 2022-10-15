@@ -1,0 +1,19 @@
+@media screen and (min-width: 580px) {
+    .hamburger {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: block;
+    }
+
+    .desktopMenu a {
+        font-family: 'Amatic SC', cursive;
+
+        text-decoration: none;
+        font-size: 2.2rem;
+
+        color: black;
+        margin: 1rem;
+    }
+}
