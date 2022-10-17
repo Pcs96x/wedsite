@@ -122,6 +122,12 @@
 
 /* DESKTOP MENU */
 
+.desktopMenu {
+    display: none;
+}
+
+/* DESKTOP MENU */
+
 h1 {
     max-width: 800px;
     margin: 0 auto;
