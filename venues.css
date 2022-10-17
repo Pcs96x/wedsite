@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.home-image {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+h1 {
+    max-width: 800px;
+    margin: 0 auto;
+
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    text-align: center;
+    font-size: 5rem;
+
+    margin-bottom: 4rem;
+}
+
+/* CONTENT -------- */
+
+.church-wrapper {
+    width: 100%;
+    height: 60vh;
+
+    margin: 0 auto;
+}
+
+.church-wrapper h2 {
+    text-align: center;
+
+    margin-bottom: 2rem;
+
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.church-img {
+    width: 80%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    background: url(/images/church.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.church-para {
+    margin: 1rem;
+    margin-top: 7rem;
+}
+
+.church-para p {
+    width: 80%;
+    margin: 0 auto;
+
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* RECEPTION */
+
+.reception-wrapper {
+    width: 100%;
+    height: 60vh;
+
+    margin: 0 auto;
+}
+
+.reception-wrapper h2 {
+    text-align: center;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.reception-img {
+    width: 80%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    background: url(/images/vime.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reception-para {
+    margin: 1rem;
+    margin-top: 7rem;
+}
+
+.reception-para p {
+    width: 80%;
+    margin: 0 auto;
+
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+}
