@@ -1,0 +1,40 @@
+@media screen and (min-width: 580px) {
+    body {
+        width: 100%;
+        height: 100vh;
+        background: url(newBG.png);
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .desktopMenu a {
+        font-family: 'Amatic SC', cursive;
+
+        text-decoration: none;
+        font-size: 2.2rem;
+
+        color: black;
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .stories {
+        width: 90%;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'gems' 'phills';
+    }
+}

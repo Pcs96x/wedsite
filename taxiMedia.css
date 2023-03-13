@@ -1,0 +1,27 @@
+@media screen and (min-width: 580px) {
+    body {
+        /* background: url(/images/GPWeddingBG.jpg); */
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    .desktopMenu {
+        width: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .desktopMenu a {
+        font-family: 'Amatic SC', cursive;
+
+        text-decoration: none;
+        font-size: 2.2rem;
+
+        color: black;
+        margin: 1rem;
+    }
+}

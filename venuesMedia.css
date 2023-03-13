@@ -1,0 +1,98 @@
+@media screen and (min-width: 580px) {
+    .hamburger {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: block;
+        margin-top: 1rem;
+    }
+
+    .desktopMenu a {
+        font-family: 'Amatic SC', cursive;
+
+        text-decoration: none;
+        font-size: 2.2rem;
+
+        color: black;
+        margin: 1rem;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background: url(newBG.png);
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (min-width: 580px) {
+
+    .bigGrid {
+        display: none;
+    }
+
+    .desktopGrid {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        'one' 'two';
+    }
+
+    .desktopChurchPara h2, 
+    .desktopRecepPara h2 {
+        text-align: center;
+
+        font-family: 'Amatic SC', cursive;
+        font-weight: 400;
+        font-size: 2.5rem;
+    } 
+
+    .desktopChurchPara p, 
+    .desktopRecepPara p {
+        text-align: center;
+
+        font-family: 'Amatic SC', cursive;
+        font-weight: 400;
+        font-size: 2rem;
+
+        margin: 1rem;
+    }
+
+    .desktopGridImgs {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        'one' 'two';
+
+        padding: 1rem;
+    }
+
+    .desktopChurchImg {
+        width: 90%;
+        height: 50vh;
+
+        margin: 0 auto;
+
+        background: url(/church.jpg);
+        background-position: center;
+    }
+
+    .desktopRecepImg {
+        width: 90%;
+        height: 50vh;
+
+        margin: 0 auto;
+        
+        background: url(/vime.jpg);
+        background-position: center;
+    }
+
+}

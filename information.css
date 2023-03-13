@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(newBG.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#checkbox, .btn span { /* Hide the checkbox input & word "Menu" in the button */
+    display: none;
+}
+
+/* Menu button - starts */
+
+.fa-bars {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: block;
+    background-color: transparent;
+    color: black;
+    width: 55px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: width .3s ease-in-out;
+}
+/* Menu button - ends */
+
+/* Sidebar - starts */
+.sidebar {
+    background-color: black;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    z-index: 1111;
+    transition: transform .3s ease-in-out;
+    transform: translateX(-250px);
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar ul a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+}
+
+.sidebar ul li a {
+    margin-right: 15px;
+    font-family: 'Amatic SC', cursive;
+}
+
+/* Add the word "New" to the second item and "2" to the third item */
+.sidebar ul a:nth-child(2)::after, .sidebar ul a:nth-child(3)::after {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -9px;
+    color: black;
+    font-size: 13px;
+    padding: 0 7px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.sidebar ul a:nth-child(2)::after {
+    content: "New";
+    background-color: tomato;
+}
+
+.sidebar ul a:nth-child(3)::after {
+    content: "2";
+    background-color: #247D9E;
+}
+
+/* Add margin to the icon in the second item */
+.sidebar ul a:nth-child(2) li i {
+    margin-left: 4px;
+    margin-right: 19px;
+}
+
+.sidebar ul a:hover, .sidebar ul a.active {
+    background-color: #161920;
+    color: #fff;
+}
+
+.sidebar ul a:hover::before, .sidebar ul a.active::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: #cbb26b;
+    width: 4px;
+    height: 100%;
+}
+/* Sidebar - ends */
+
+/* Effect of showing the sidebar - starts */
+#checkbox:checked ~ .sidebar {
+    transform: translateX(0);
+}
+
+#checkbox:checked + .btn {
+    width: 250px;
+    padding: 0 20px;
+}
+
+#checkbox:checked + .btn span { /* Show again the word "Menu" in the button */
+    display: none;
+}
+/* Effect of showing the sidebar - ends */
+
+/* DESKTOP MENU */
+
+.desktopMenu {
+    display: none;
+}
+
+/* DESKTOP MENU */
+
+.container {
+    
+}
+
+h1 {
+    max-width: 800px;
+    margin: 0 auto;
+
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    text-align: center;
+    font-size: 4.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.home-image {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.stories {
+    width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'gems'
+    'phills';
+    grid-column-gap: 3rem;
+
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.gems {
+    margin-bottom: 3rem;
+}
+
+.locationPara {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+
+    margin: 0 auto;
+
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+
+    margin-top: 2rem;
+}
+
+.iconPara {
+    width: 90%;
+    max-width: 100%;
+    text-align: center;
+
+    font-family: 'Amatic SC', cursive;
+    font-weight: 400;
+    font-size: 2rem;
+
+    margin: 0 auto;
+}
+
+.icons {
+    width: 90%;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.icons img {
+    margin: 2rem;
+}
+
+.mapIconPara {
+    margin-top: 2rem;
+}
+
+.taxiPara {
+    margin-bottom: 5rem;
+}
